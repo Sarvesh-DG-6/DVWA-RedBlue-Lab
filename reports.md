@@ -1,0 +1,13 @@
+---
+
+| **Attack**                    | **Evidence / Observed**                                                    | **Mitigation**                                                                                                                                                                   |
+| ----------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SQL Injection (SQLi)          | Suspicious quotes (`'`) or `--` in access.log; database dumped with sqlmap | - Use parameterized queries / prepared statements <br> - Input validation / reject dangerous characters <br> - Least privilege DB accounts <br> - Web Application Firewall (WAF) |
+| Reflected / Stored XSS        | `<script>` payloads in access.log; alert pop-ups in browser                | - Output encoding / escaping <br> - Content Security Policy (CSP) <br> - Input sanitization <br> - HTTPOnly cookies for sessions                                                 |
+| Command Injection             | Output of `id`, `uname`, `whoami` commands executed via DVWA               | - Avoid shell commands with user input <br> - Input sanitization <br> - Run web server with least privilege                                                                      |
+| File Upload → Web Shell / RCE | Uploaded `.php` shell executed; `curl` shows command output                | - Restrict file types <br> - Rename files and store outside web root <br> - Scan uploads for malware <br> - Validate MIME type and file size                                     |
+| Brute Force Login (Hydra)     | Multiple failed login attempts logged in access.log                        | - Enforce strong passwords <br> - Rate limiting / account lockout <br> - CAPTCHA / MFA                                                                                           |
+| CSRF                          | Password changed without consent; unexpected POSTs in logs                 | - Use CSRF tokens <br> - SameSite cookies <br> - Validate Referrer / Origin <br> - Use POST for state-changing operations                                                        |
+| Network / Traffic             | tcpdump / Wireshark captures malicious payloads; repeated requests         | - Log analysis and anomaly detection <br> - IDS/IPS monitoring <br> - Firewall rules to restrict unnecessary ports                                                               |
+
+---
