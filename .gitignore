@@ -1,0 +1,30 @@
+# OS / system files
+.DS_Store
+Thumbs.db
+
+# IDE / editor configs
+.vscode/
+.idea/
+*.swp
+
+# Python / scripts
+__pycache__/
+*.pyc
+
+# Log files
+*.log
+*.err
+
+# Packet captures
+*.pcap
+*.cap
+
+# Temporary lab files
+*.tmp
+*.bak
+
+# DVWA uploads (web shells, test files)
+dvwa/hackable/uploads/*
+
+# Database dumps (optional if too large)
+*.sql
