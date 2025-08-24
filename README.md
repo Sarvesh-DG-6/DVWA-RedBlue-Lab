@@ -47,8 +47,8 @@ We simulated **Red Team attacks** from Kali Linux, **Blue Team monitoring** on U
 4. Install attack tools on Kali.  
 5. Run attacks sequentially on DVWA Low Security: SQLi → XSS → Command Injection → File Upload → Brute Force → CSRF.  
 6. Monitor logs and capture traffic for documentation:
-     on Ubuntu: Monitored Ubuntu logs, observed attack evidence, captured traffic using tcpdump/Wireshark, analyzed Apache and system logs.
-     on Windows10: Monitored EventVewer -> Security logs for failed login attempts (Event ID 4625). 
+    \n on Ubuntu: Monitored Ubuntu logs, observed attack evidence, captured traffic using tcpdump/Wireshark, analyzed Apache and system logs.
+    \n on Windows10: Monitored EventVewer -> Security logs for failed login attempts (Event ID 4625). 
 7. Document every attack with screenshots, payloads, logs, PCAPs, and mitigation steps.
  
 ---
